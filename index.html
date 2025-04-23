@@ -1,60 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
+  <!-- Menentukan karakter encoding halaman dan memastikan tampilan responsif pada berbagai perangkat -->
   <meta charset="UTF-8">
-  <!-- Responsive viewport meta tag for RWD -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Responsive Portfolio</title>
+  <title>Portfolio</title>
+  <!-- Memanggil file CSS eksternal untuk styling halaman -->
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <!-- Accessible Header -->
+
+  <!-- Bagian Header halaman -->
   <header>
-    <h1>My Portfolio</h1>
-    <nav aria-label="Main Navigation">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <!-- Judul Halaman -->
+      <h1>My Portfolio</h1>
+      <!-- Navigasi untuk bagian-bagian dalam halaman -->
+      <nav>
+        <!-- Link untuk menuju ke bagian About, Projects, dan Contact -->
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <!-- Profile Section -->
-    <section id="about">
-      <h2>About Me</h2>
-        <picture>
-            <source srcset="A.jpg" type="image">
-            <img src="A.jpg" alt="Profile Picture">
-          </picture>
-          
-      <p>saya Muhammad Maulana Ihsan, seorang mahasiswa informatika yang sedang menempuh pendidikan di Universitas Teknologi Digital Indonesia. Dengan antusiasme yang tinggi terhadap dunia teknologi, saya terus mengembangkan keterampilan dan pengetahuan di bidang pengembangan web, analisis data. Portofolio ini menampilkan beberapa proyek dan karya yang mencerminkan dedikasi saya dalam belajar dan berinovasi.
-    </p>
-    </section>
+  <!-- Bagian Tentang Saya -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-container">
+        <!-- Gambar Profil -->
+        <img src="A.jpg" alt="foto" class="profile-img">
+        <div class="about-text">
+          <!-- Judul bagian tentang saya -->
+          <h2>Hallo Guys!</h2>
+          <!-- Deskripsi singkat tentang diri saya -->
+          <p>
+            saya Muhammad Maulana Ihsan, seorang mahasiswa informatika yang sedang menempuh pendidikan di Universitas Teknologi Digital Indonesia. Dengan antusiasme yang tinggi terhadap dunia teknologi, saya terus mengembangkan keterampilan dan pengetahuan di bidang pengembangan web, analisis data. Portofolio ini menampilkan beberapa proyek dan karya yang mencerminkan dedikasi saya dalam belajar dan berinovasi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-cards">
-          <div class="card">
-            <img src="Project One.png" alt="Project 1">
-            <h3>Website wisata dikota Biak</h3>
+  <!-- Bagian Proyek -->
+  <section class="projects-section" id="projects">
+    <div class="projects-container">
+      <!-- Judul bagian proyek -->
+      <h2>Projects</h2>
+      <div class="project-cards-wrapper">
+        <!-- Kartu untuk menampilkan informasi proyek -->
+        <div class="project-card">
+          <!-- Gambar proyek -->
+          <img src="Project One.png" alt="Project 1">
+          <div class="card-content">
+            <!-- Nama dan deskripsi proyek -->
+            <h3>Website Wisata Yang Ada Pada Daerah Biak</h3>
             <p>Menjelajahi Keindahan pada Budaya, pantai , air terjun, dan adat pada kabupaten Biak Numfor.</p>
           </div>
         </div>
-      </section>
-      <!-- Contact Section -->
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: muhammad.maulana@students.utdi.ac.id </p>
+      </div>
+    </div>
   </section>
-  </main>
 
-  <!-- Footer for additional accessibility and theme consistency -->
+  <!-- Bagian Kontak -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <!-- Judul bagian kontak -->
+      <h2>Contact Me</h2>
+      <!-- Deskripsi untuk menghubungi saya -->
+      <p>If you'd like to collaborate, feel free to reach out via email:</p>
+      <!-- Link email untuk menghubungi saya -->
+      <a href="mailto:muhammad.maulana@students.utdi.ac.id" class="email-link">muhammad.maulana@students.utdi.ac.id</a>
+    </div>
+  </section>
+
+  <!-- Footer atau bagian bawah halaman -->
   <footer>
-    <p>&copy; 2025 MaulanaIhsan</p>
+    <!-- Menampilkan hak cipta -->
+    <p>&copy; 2025 - MaulanaIhsan</p>
   </footer>
-</body>
 
+</body>
 </html>
